@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>DIGITRON</title>
+
+    <meta content="" name="DiGi-Tron">
+    <meta content="" name="Tron Staking, TRX stake">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Favicons -->
+    <link href="icon.png" rel="icon">
+    <link href="icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="./https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+    <!-- Vendor CSS Files
+    <link href=".assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="./assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="./assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="./assets/vendor/aos/aos.css" rel="stylesheet"> -->
+    <script src="functions.js"></script>
+
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css" />
+
+    <!-- Template Main CSS File -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container">
+
+            <div class="logo float-left">
+                <!-- Uncomment below if you prefer to use an text logo -->
+                <!-- <h1><a href="index.html">NewBiz</a></h1> -->
+                <a href="https://digi-tron.com"><b>DIGITRON</b></a>
+                <p><small>DECENTRALIZED FINANCE</small></p>
+            </div>
+
+            <nav class="main-nav float-right d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="#why-us">Home</a></li>
+                    <li><a href="#stake">Your Stake</a></li>
+                    <li><a href="#partners">Partnership</a></li>
+                    <li><a href="https://tronscan.io/#/contract/TTLQNt6WPkxH1U2Csmwzdf1BALf8XPfFUB">Contract</a></li>
+                    <li><a href="https://digi-tron.com/audit/HazeSecurity_DiGiTron.pdf" target=”_blank”>Audit</a></li>
+                    <li><a href="https://www.dapp.com/app/digitron" target=”_blank”>DAPP</a></li>
+                    <li style="visibility: hidden" id="cutHeader"><a href="#cutAndRunSection">Cut & Run</a></li>
+                    <li><a href="https://t.me/c/1450434986/8"><img  style="height: 35px; width: auto; margin-bottom: 1%;" src="https://telegram.org/img/t_logo.svg?1"></a></li>
+                </ul>
+            </nav>
+            <!-- .main-nav -->
+
+        </div>
+    </header>
+    <!-- #header -->
+
+    <!-- ======= Intro Section ======= -->
+    <section id="intro" class="clearfix">
+        <div class="container" data-aos="fade-up">
+
+            <div class="intro-img" data-aos="zoom-out" data-aos-delay="200">
+
+            </div>
+
+            <div class="intro-info" data-aos="zoom-in" data-aos-delay="100">
+                <h1 style="color: #ffffff; display: inline-block">
+                    <div style="display: inline-block"><a style="color: white" href="https://tronscan.io/#/contract/TTLQNt6WPkxH1U2Csmwzdf1BALf8XPfFUB">Contract</a> Balance:</div><b><div style="display: inline-block; color: white; margin-left: 2%;" id="contractBalance"></div></b></h1>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Intro Section -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about">
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header">
+                </header>
+
+                <div class="row about-container">
+                    <div class="col-lg-6 col-lg-6 background order-lg-2" data-aos="zoom-in">
+
+                        <div class="col-lg-6">
+                            <div data-v-4e401b87="" class="text-center">
+                                <p data-v-4e401b87="" class="text">DAILY PROFIT</p>
+                                <h1 data-v-4e401b87="" class="title-header border-bottom" id="dailyProfit">????</h1>
+                                <p data-v-4e401b87="" class="text mb-3" id="youWillGet">in 21 DAYS YOU WILL HAVE</p>
+                                <h4 data-v-4e401b87="" class="title-middle"><b><div id="calculatedTrx">??? TRX</div></b></h4>
+                                <button data-v-4e401b87="" id="investBtn" style="background-color: #0b6bd3; border-color: #0b6bd3" class="btn btn-danger btn-stake" onclick="invest()">STAKE TRX</button>
+                                <p data-v-4e401b87="" style="line-height: normal" class="text text-uppercase"><small data-v-4e401b87="">In order to make deposit you need to have about 50 extra TRX in
+            your wallet<br data-v-4e401b87="">
+            or buy/lend energy for transaction fee,<br data-v-4e401b87="">for withdraws it also
+                needed</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mb-3 pr-lg-0" style="float: left">
+                        <p class="text card-text">CHOOSE DEPOSIT PERIOD</p>
+                        <h2 class="title-smaller">
+                            <div id="depositTermSelected">21 DAYS</div>
+                        </h2>
+                        <div class="range-box">
+                            <input id='depositTermSlider' style="width: 75%;" data-v-4e401b87="" type="range" min="0" step="1" max="2" class="slider" onchange="getPlanPercent(this.value)">
+                            <div data-v-4e401b87="" class="progressBar"></div>
+                        </div>
+                        <div data-v-4e401b87="" class="text-center">
+                            <div class="row" style="margin-left: 3%; margin-top: 2%;">
+                                <p><small>MIN DEPOSIT: <script>document.write(numberWithCommas(minAllowed))</script> TRX</small></p>
+                            </div>
+
+                            <div class="row" style="margin-left: 3%; margin-top: 2%;">
+                                <p><small>MAX DEPOSIT: <script>document.write(numberWithCommas(maxAllowed))</script> TRX</small></p>
+                            </div>
+                            <div style="float: left" data-v-4e401b87="" class="border w-75 my-4 mx-auto py-2">Enter deposit amount <br data-v-4e401b87="">
+                                <input data-v-4e401b87="" type="text" class="input" style="text-align: center" id="depositAmount" value='5000' min="500" max="50000">
+                                <div class="row" style="margin-left: 3%; margin-top: 2%;">Compound Interest:
+                                    <div style="margin-left: 1%;"><input id='compoundInterest' class="custom-switch" type="checkbox"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            </div>
+
+            <!--        <div class="row about-extra">-->
+            <!--          <div class="col-lg-6" data-aos="fade-right">-->
+            <!--            <img src="assets/img/about-extra-1.svg" class="img-fluid" alt="">-->
+            <!--          </div>-->
+            <!--          <div class="col-lg-6 pt-5 pt-lg-0" data-aos="fade-left">-->
+            <!--            <h4>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h4>-->
+            <!--            <p>-->
+            <!--              Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.-->
+            <!--            </p>-->
+            <!--            <p>-->
+            <!--              Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.-->
+            <!--            </p>-->
+            <!--          </div>-->
+            <!--        </div>-->
+
+            <!--        <div class="row about-extra">-->
+            <!--          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">-->
+            <!--            <img src="assets/img/about-extra-2.svg" class="img-fluid" alt="">-->
+            <!--          </div>-->
+
+            <!--          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right">-->
+            <!--            <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4>-->
+            <!--            <p>-->
+            <!--              Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt.-->
+            <!--            </p>-->
+            <!--            <p>-->
+            <!--              Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.-->
+            <!--            </p>-->
+            <!--            <p>-->
+            <!--              Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.-->
+            <!--            </p>-->
+            <!--          </div>-->
+
+            <!--        </div>-->
+
+            </div>
+        </section>
+        <!-- End About Section -->
+
+        <!-- ======= Why Us Section ======= -->
+        <section id="why-us">
+            <div class="container" data-aos="fade-up">
+                <header class="section-header">
+                    <h3>Why choose DiGi-Tron?</h3>
+                    <p>I have been the little guy. Whales wipe stakers like us out & we as a whole have lost millions. DiGi-Tron aims to prevent that with Max stake limits of
+                        <script>
+                            document.write(numberWithCommas(maxAllowed))
+                        </script> TRX per stake and a total limit of 1 million total staked (per person) at a time.</p>
+                </header>
+
+                <div class="row row-eq-height justify-content-center">
+
+                    <div class="col-lg-4 mb-4">
+                        <div class="card" data-aos="zoom-in" data-aos-delay="100">
+                            <i class="fa fa-certificate"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Audited</h5>
+                                <p><a href="https://digi-tron.com/audit/HazeSecurity_DiGiTron.pdf" target=”_blank”>Download</a> our audit report</p>
+
+                                <!--                <a href="#" class="readmore">Read more </a>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4">
+                        <div class="card" data-aos="zoom-in" data-aos-delay="200">
+                            <i class="fa fa-money"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">CUT & RUN</h5>
+                                <p class="card-text">DiGi-Tron is the not the first staking contract, however we are the first to offer what we call cut & run. Nervous? or Need your TRX to trade ? Select cut and run, take 50% of your deposit and end your stake no questions
+                                    asked.</p>
+                                <p><b>PLEASE NOTE any withdrawals will be included in your cut and run amount, Upon selecting cut and run 50% of your stake less any withdrawals will be transferred to your wallet</b></p>
+
+
+                                <!--                <a href="#" class="readmore">Read more </a>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4">
+                        <div class="card" data-aos="zoom-in" data-aos-delay="300">
+                            <i class="fa fa-clock-o"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">INFO</h5>
+                                <p class="card-text">Available Deposit periods are 14 ,21 or 28 days.</p>
+                                <p class="card-text">Withdraw Anytime (NON CAP stakes only)</p>
+                                <p class="card-text">ROI rate increases by 0.2% daily, (were in it for the long haul) </p>
+                                <p class="card-text">Capital Investments only payout <u><b>AFTER</b></u> deposit period is over (Patience pays)</p>
+                                <!--                <a href="#" class="readmore">Read more </a>-->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--        <div class="row counters" data-aos="fade-up" data-aos-delay="100">-->
+
+                <!--          <div class="col-lg-3 col-6 text-center">-->
+                <!--            <span data-toggle="counter-up">274</span>-->
+                <!--            <p>Clients</p>-->
+                <!--          </div>-->
+
+                <!--          <div class="col-lg-3 col-6 text-center">-->
+                <!--            <span data-toggle="counter-up">421</span>-->
+                <!--            <p>Projects</p>-->
+                <!--          </div>-->
+
+                <!--          <div class="col-lg-3 col-6 text-center">-->
+                <!--            <span data-toggle="counter-up">1,364</span>-->
+                <!--            <p>Hours Of Support</p>-->
+                <!--          </div>-->
+
+                <!--          <div class="col-lg-3 col-6 text-center">-->
+                <!--            <span data-toggle="counter-up">18</span>-->
+                <!--            <p>Hard Workers</p>-->
+                <!--          </div>-->
+
+                <!--        </div>-->
+
+            </div>
+        </section>
+        <!-- End Why Us Section -->
+
+        <!-- ======= Services Section ======= -->
+        <section id="stake" class="section-bg">
+
+            <div class="container" data-aos="fade-up">
+                <header class="section-header">
+                    <h3>Stakes</h3>
+                </header>
+
+                <div class="row justify-content-center">
+                    <div data-v-ae493f60="" class="col-12">
+                        <div data-v-ae493f60="" style="text-align: center">
+
+                            <div data-v-ae493f60="">
+                                <div data-v-ae493f60="" class="content-container">
+
+                                    <div data-v-ae493f60="" class="text-center">
+
+                                        <p data-v-ae493f60="" class="mb-0"><small data-v-ae493f60="" class="fz-14">Available for withdrawal</small></p>
+
+                                        <b><p data-v-ae493f60="" class="mb-0 fz-16" id="availableToWithdraw">CONNECT YOUR TRONLINK WALLET</b></p>
+
+                                        <div data-v-ae493f60="row text-center">
+                                            <button data-v-ae493f60="" class="btn btn-danger py-2 btn-block mt-5" style="width: 35%; margin: 1% auto;" onclick="withdraw()">WITHDRAW TRX</button>
+                                            <small data-v-ae493f60="" class="my-2 d-block" style="line-height: 1.2;">To prolong the life of the contract, Please reinvest part of the profits</small>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="col-lg-6 mb-3 pr-lg-0" style="float: left">
+                                        <div data-v-4e401b87="" class="text-center">
+                                            <h3>ACTIVE</h3>
+
+                                            <div style="float: left" data-v-4e401b87="" class="border w-75 my-4 mx-auto py-2" id="activeStakes"></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 mb-3 pr-lg-0" style="float: right">
+                                        <div data-v-4e401b87="" class="text-center">
+                                            <h3>ENDED</h3>
+
+                                            <div style="float: right" data-v-4e401b87="" class="border w-75 my-4 mx-auto py-2" id="endedStakes"></div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </section>
+        <!-- End Services Section -->
+
+        <!-- ======= Partnership Section ======= -->
+        <section id="partners" style="background-color: #005cbf">
+            <div class="container demo-bg">
+                <div class="row" style="color: #ffffff">
+                    <div class="col-sm-4">
+
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="business-hours" style="padding-top: 1%;">
+                            <h1 class="title" style="padding-top: 4%;"><b><div style="margin-top: 5%;">PARTNERSHIP</div></b></h1>
+                            <div data-v-ed2af6cc="" class="card-body">
+                                <p data-v-ed2af6cc="" class="card-text">Earn TRX promoting DiGi-Tron</p>
+                                <p data-v-ed2af6cc="" class="card-text">
+                                    Get your personal link below &amp; share it to start earning
+                                </p>
+                                <p data-v-ed2af6cc="" class="card-text mb-0">
+                                    5% from each lvl 1 referral deposits
+                                </p>
+                                <p data-v-ed2af6cc="" class="card-text mb-0">
+                                    2.5% from each lvl 2 referral deposits
+                                </p>
+                                <p data-v-ed2af6cc="" class="card-text mb-0">
+                                    0.5% from each lvl 3 referral deposits
+                                </p>
+                                <p data-v-ed2af6cc="" class="card-text mt-3">
+                                    TRX will come in your available for withdrawal balance right after deposit
+                                </p>
+                                <p data-v-ed2af6cc="" class="card-text">
+                                    Note! You need to have at least 1 deposit to start receive earnings
+                                </p>
+
+                                <div data-v-ed2af6cc=""><label data-v-ed2af6cc="" class="fz-12">Your link:</label>
+                                    <div data-v-ed2af6cc="" class="input-group mb-3">
+                                        <input style="width: 75%;" data-v-ed2af6cc="" type="text" id="ref-link" readonly="readonly" class="form-control text-truncate border-right-0 fz-12">
+                                        <div data-v-ed2af6cc="" class="input-group-append"><button data-v-ed2af6cc="" class="copy-btn input-group-text text-danger" onclick="copyLinkToClipboard()">
+                Copy
+              </button></div>
+                                    </div>
+
+                                    <div class="row justify-content-center" data-v-ed2af6cc="" style="text-align: center">LVL 1 Refferals: &nbsp;
+                                        <div id="lvl1Ref"></div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center" data-v-ed2af6cc="" style="text-align: center">LVL 2 Refferals: &nbsp;
+                                    <div id="lvl2Ref"></div>
+                                </div>
+                                <div class="row justify-content-center" data-v-ed2af6cc="" style="text-align: center">LVL 3 Refferals: &nbsp;
+                                    <div id="lvl3Ref"></div>
+                                </div>
+                                <div class="row justify-content-center" data-v-ed2af6cc="" style="text-align: center">Total earned from partnership: &nbsp;
+                                    <div id="refBonusTotal"></div> &nbsp;TRX</p>
+                                    <div class="row justify-content-center" data-v-ed2af6cc="" style="text-align: center">Total withdrawn partnership earnings:&nbsp;
+                                        <div id="refBonusWithdrawn"></div>&nbsp; TRX</p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="cutAndRunSection" class="section-bg" style=" visibility: hidden">
+
+            <div class="container" data-aos="fade-up">
+                <header class="section-header">
+                    <h3>
+                        <div style="margin-top: 4%; margin: 1% auto;">CUT & RUN</div>
+                    </h3>
+
+                </header>
+
+                <div class="row justify-content-center">
+                    <div data-v-ae493f60="" class="col-12">
+                        <div data-v-ae493f60="" style="text-align: center">
+                            <div id="cutAndRunValue"></div>
+
+                            <small data-v-ae493f60="" class="my-2 d-block" style="line-height: 1.2;">Please note the cut & run option only allows you a total of 50% of your total at stake less what you have already withdrawn, after you surpass the 50% withdrawn the cut and run is no longer available</small>
+                            <small data-v-ae493f60="" class="my-2 d-block" style="line-height: 1.2;">When using this option, you'll get your 50%, <u>if the balance of the conract is at or above that amount</u>. All your stakes will then be removed. and you can walk away with better than 0. There will be no stakes for you to view once you trigger the cut & run. Feel free to come back at any time</small>
+
+                            <button data-v-ae493f60="" class="btn btn-danger py-2 btn-block mt-5" style="width: 35%; margin: 1% auto; visibility: hidden; margin-bottom: 15%;" onclick="confirmCutAndRun()" id="cAndR">CUT & RUN</button>
+
+
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Services Section -->
+
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // setInterval(function(){ connect(); }, 5000);
+    });
+
+
+    $(document).ready(function() {
+        sleep(1000).then(() => {
+            connect()
+            updateContractData()
+            // Do something after the sleep!
+
+
+
+
+        });
+
+        potentialStaked = 5000;
+
+        let investBtn = document.getElementById('investBtn');
+        let capitalSelected = document.getElementById('compoundInterest');
+        let letPotentialStakeAmount = document.getElementById('depositAmount');
+        capitalSelected.onchange = handleCapitalCheck;
+        letPotentialStakeAmount.onchange = handleStakeChange;
+        investBtn.onclick = invest;
+
+
+
+        setInterval(function() {
+            if (window.tronWeb.defaultAddress.base58) {
+                updateContractData();
+                alerted = false;
+            } else {
+                if (!alerted) {
+                    alerted = true;
+
+                    alertify.alert('TronLink', 'Please download Tronlink on your mobile phone (<a href="https://play.google.com/store/apps/details?id=com.tronlinkpro.wallet&hl=en_US&gl=US">Android</a>, <a href="https://apps.apple.com/us/app/tronlink-trx-btt-wallet/id1453530188">iOS</a>) or use the <a href="https://chrome.google.com/webstore/detail/tronlink%EF%BC%88%E6%B3%A2%E5%AE%9D%E9%92%B1%E5%8C%85%EF%BC%89/ibnejdfjmmkpcnlpebklmnkoeoihofec">Tronlink Chrome plug-in</a> on your PC. <br><p>OR if you have already done so, kindly sign into your wallet...</p>', function() {
+
+                    });
+
+                }
+
+
+            }
+        }, 5000);
+
+    }); // wait for the DOM to be loaded
+
+
+    window.addEventListener('message', function(e) {
+
+        console.log(e.data.message);
+        if (e.data.message && e.data.message.action == "setAccount") {
+            connect()
+
+        }
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
